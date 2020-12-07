@@ -1,0 +1,507 @@
+* {
+	box-sizing: border-box;
+}
+/* logo */
+
+.logo{
+	position: absolute;
+	width: 146.7px;
+	height: 38px;
+	left: 24px;
+	top: 19px;
+	z-index: 1;
+}
+
+/* nev */
+.menut
+{
+  text-decoration: none;
+  color: #FFFFFF;
+  transition: color 0.3s ease;
+}
+
+.menut:hover
+{
+  color: #0BFF4F;
+}
+
+ul {
+	display: block;
+    list-style-type: disc;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    padding-inline-start: 0px;
+}
+
+li {
+	width: 279px;
+    border-top: 1px solid #0BFF4F;
+    padding-inline-start: 0px;
+		
+}
+
+#menuToggle
+{
+  display: block;
+  position: absolute;
+  top: 50px;
+  right: 50px;
+  
+  z-index: 1;
+  
+  -webkit-user-select: none;
+  user-select: none;
+}
+
+#menuToggle input
+{
+  display: block;
+  width: 40px;
+  height: 32px;
+  position: absolute;
+  top: -7px;
+  left: -5px;
+  
+  cursor: pointer;
+  
+  opacity: 0; /* hide this */
+  z-index: 2; /* and place it over the hamburger */
+  
+  -webkit-touch-callout: none;
+}
+
+/*
+ * Just a quick hamburger
+ */
+#menuToggle span
+{
+  display: block;
+  width: 33px;
+  height: 4px;
+  margin-bottom: 5px;
+  position: relative;
+  
+  background: #ffffff;;
+  border-radius: 3px;
+  
+  z-index: 1;
+  
+  transform-origin: 4px 0px;
+  
+  transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
+              background 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
+              opacity 0.55s ease;
+}
+
+#menuToggle span:first-child
+{
+  transform-origin: 0% 0%;
+}
+
+#menuToggle span:nth-last-child(2)
+{
+  transform-origin: 0% 100%;
+}
+
+/* 
+ * Transform all the slices of hamburger
+ * into a crossmark.
+ */
+#menuToggle input:checked ~ span
+{
+  opacity: 1;
+  transform: rotate(45deg) translate(-2px, -1px);
+  background: #FFFFFF;
+}
+
+/*
+ * But let's hide the middle one.
+ */
+#menuToggle input:checked ~ span:nth-last-child(3)
+{
+  opacity: 0;
+  transform: rotate(0deg) scale(0.2, 0.2);
+}
+
+/*
+ * Ohyeah and the last one should go the other direction
+ */
+#menuToggle input:checked ~ span:nth-last-child(2)
+{
+  opacity: 1;
+  transform: rotate(-45deg) translate(0, -1px);
+}
+
+/*
+ * Make this absolute positioned
+ * at the top left of the screen
+ */
+#menu
+{
+	position: absolute;
+    width: 279px;
+    height: 900px;
+    margin: -77px 0 0 0;
+    /* padding: 50px; */
+    padding-top: 120px;
+    right: -50px;
+    background: #000000;
+    list-style-type: none;
+    -webkit-font-smoothing: antialiased;
+    transform-origin: 0% 0%;
+    transform: translate(100%, 0);
+    transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
+}
+
+#menu li
+{
+	padding: 6px 0;
+  	font-style: normal;
+	font-weight: 300;
+	font-size: 40px;
+	line-height: 110%;
+}
+
+
+
+
+#menuToggle input:checked ~ ul
+{
+  transform: scale(1.0, 1.0);
+  opacity: 1;
+}
+
+
+
+body {
+	background-color: #FFFFFF;
+	color: #000000;
+	font-family: Univers LT Std, sans-serif;
+	font-weight: 55;
+	line-height: 160%;
+	font-size: 18px;
+	margin: 0em;
+	overflow-x: hidden;
+
+}
+
+section { 
+ }
+
+.home-banner {
+	max-width: 100%;
+}
+.home-wecanhelp{ 	
+	max-width: 100%;
+
+}
+.How-to-access {
+	max-width: 100%;
+	width: 1440px;
+	height: 657px;
+	left: 0px;
+	top: 1663px;
+}
+
+/*Typpograhy */
+
+h1 {
+	position: absolute;
+	width: 443px;
+	height: 63px;
+	left: 30px;
+	top: 483px;
+	font-family: Univers LT Std, sans-serif;
+    font-style: italic;
+    font-weight: normal;
+    line-height: 0.9em;
+    font-size: 70px;
+    letter-spacing: -0.01em;
+    margin: 0em;
+	}
+				.h1white{
+					position: absolute;
+					width: 443px;
+					height: 55px;
+					left: 30px;
+					top: 546px;
+					color: #FFFFFF;
+				}	
+
+				.h1black{
+					position: absolute;
+					width: 443px;
+					height: 106px;
+					left: 30px;
+					top: 609px;
+					color: #000000;
+				}	
+
+
+h2{
+	position: absolute;
+	width: 341px;
+	height: 57px;
+	left: 34px;
+	top: 752px;
+	font-family: Univers LT Std;
+    font-style: italic;
+    font-weight: 300;
+    line-height: 130%;
+    font-size: 22px;
+    margin: 0em;
+	}
+
+
+
+
+
+h3{
+	font-style: normal;
+	font-weight: 800;
+	font-size: 28px;
+	line-height: 110%;
+	text-transform: uppercase;
+	margin-top: 0.8em;
+	margin-bottom: 2em;
+}
+
+p {
+	margin:0em;
+}
+
+.subhead {
+	font-style: normal;
+	font-weight: 900;
+	font-size: 20px;
+	line-height: 130%;
+	color: #000000;
+	text-transform: uppercase;
+}
+
+.subhead-italic {
+	font-style: italic;
+	font-weight: 300;
+	font-size: 22px;
+	line-height: 130%;
+}
+
+.body-blad {
+	font-style: normal;
+	font-weight: bold;
+	font-size: 18px;
+	line-height: 130%;
+	margin-bottom: 1em;
+}
+.body1{
+	font-style: normal;
+	font-size: 18px;
+	line-height: 130%;
+	margin-bottom: 1em;
+}
+/*gird*/
+
+
+.container{
+	max-width: 1440px;
+	margin-right: 4em;
+    margin-left: 4em;
+	}
+
+
+.grid {
+	display: grid;
+	grid-template-columns: 100%;
+	}
+
+.nested {
+	padding:0em 0em 1em 0em;
+	font-weight: 900;
+	font-size: 20px;
+	line-height: 130%;
+	text-align: left;
+	text-transform: uppercase;
+	grid-template-columns: repeat(4, 1fr);
+	grid-template-rows:33.33%;
+	display: grid;
+	grid-gap: 20px;
+	grid-row-gap: 10px;
+}
+
+.nested > div {
+		width: 165px;
+		height: 95px;
+    	border-top: 2px solid #0BFF4F;
+		}
+
+
+
+
+
+.white-button {
+    position: absolute;
+    top: 830px;
+	left: 37px;
+    border-radius: 1.5em;
+    padding: 0.4em 1.5em;
+    text-decoration: none;
+    color: #000000;
+    display: inline-block;
+    margin: 0;
+    background-color: #FFFFFF;
+    font-family: Univers LT Std;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 16px;
+	text-align: center;
+	line-height: 160%;
+	}
+
+.button {
+    position: absolute;
+    border-radius: 1.5em;
+    padding: 0.4em 1.5em;
+    text-decoration: none;
+    color: #000000;
+    display: inline-block;
+    margin: 0;
+    background-color: #FFFFFF;
+    transition: color 0.25s;
+    font-family: Univers LT Std;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 16px;
+	text-align: center;
+	line-height: 160%;
+	}
+
+.green-button {
+	position: absolute;
+    border-radius: 1.5em;
+    padding: 0.6em 1.5em;
+    text-decoration: none;
+    color: #000000;
+    display: inline-block;
+    margin-top: 1em;
+    background-color: #0BFF4F;
+    transition: color 0.25s;
+    font-family: Univers LT Std;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 16px;
+	text-align: center;
+	line-height: 160%;
+	}
+}
+
+
+.videothumbnail{
+	position: absolute;
+	left: 0px;
+	top: 0px;	
+	}
+
+/*organic shapes*/
+.horshapeG1{
+	position: absolute;
+	width: 691px;
+	left: -59px;
+	top: 343px;
+	margin: 0;
+	z-index: 0;
+	}
+
+.horshapeG2 {
+	position: absolute;
+	width: 471.2367px;
+	left: 967px;
+	top: 988px;
+	z-index: -2;
+	}
+
+.horshapeW1 {
+	position: absolute;
+	width: 295px;
+	left: 339px;
+	top: 636px;
+	z-index: 0;
+	}
+
+.green-wave{
+	margin-top: 8em;
+	margin-bottom: 3em;
+}
+
+.item2 {
+	margin-left: 2em;
+	}
+
+.item4 {
+	margin-left: 1em;
+	}
+
+
+/* Media*/
+
+@media (min-width: 500px){
+	h1{
+		font-size: 70px;
+		font-weight: normal;
+		}
+	
+	h2{
+		font-size: 22px;
+		font-style: italic;
+		font-weight: 300;
+		}
+
+	h3{
+		font-size: 28px;
+		font-style: normal;
+		font-weight: 800;
+		}
+
+
+	.two-col {
+		position: absolute;
+		grid-template-columns: 60% 40%;
+		grid-gap: 10px;
+		top: 973.5px;
+		margin-right: 7em;
+		}	
+	
+
+	.three-col {
+		position: absolute;
+		grid-template-columns: repeat(3, 33.3%);
+		grid-gap: 40px;
+		top: 1620px;
+		margin-right: 7em;
+		}
+
+
+
+	.itrem5 {
+		padding:0em;
+		font-weight: 900;
+		font-size: 20px;
+		line-height: 110%;
+		text-align: left;
+		text-transform: uppercase;
+		background-color: #0BFF4F;
+		margin-top: 1em
+		margin-right: 4em;
+	    margin-left: 4em;
+		}
+
+
+
+
+
+}
+
+
+
+
